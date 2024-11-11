@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  /* C O L O R S */
+  --slate-900: #1f314f;
+  --slate-500: #68778d;
+  --slate-300: #d5e1ef;
+  --white: #ffffff;
+  --link-color: #3e52a3;
+
+  /* S P A C I N G */
+  --space-500: 40px;
+  --space-300: 24px;
+  --space-200: 16px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+    transition: all 0.3s;
+}
+
+.attribution a:link {
+  color: var(--link-color);
+  font-weight: bold;
+}
+
+.attribution a:visited {
+    color: var(--slate-500);
+}
+.attribution a:hover {
+    text-decoration: none;
+    color: var(--slate-900);
+}
+.attribution a:active {
+    color: var(--slate-900);
+    font-style: italic;
+}
+
+body {
+  font-family: "Outfit", serif;
+  font-size: 62.5%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: var(--slate-300);
+}
+
+img {
+  transition: all 0.3s;
+  border-radius: 10px;
+}
+
+img:hover {
+  transform: scale(1.2);
+}
+
+.img-container {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.container {
+  display: inline-block;
+  background-color: var(--white);
+  padding: 16px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.hover:hover {
+  transform: translate(0, -2rem);
+}
+
+.content h1 {
+  color: var(--slate-900);
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.content p {
+  color: var(--slate-500);
+  font-size: 15px;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+}
+
+.content {
+  width: 288px;
+  margin-top: 22px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  font-size: 1rem;
+}
+
+.hover {
+  transition: all 0.3s;
+}
+
+
+.no-wrap {
+    white-space: nowrap;
+}
